@@ -1,10 +1,10 @@
-1. project_final.WAR ÆÄÀÏÀ» ÀÌÅ¬¸³½º¿¡ import ÇÑ´Ù.
+1. project_final.WAR íŒŒì¼ì„ ì´í´ë¦½ìŠ¤ì— import í•œë‹¤.
 
-2. °æ·Î°¡ PC¸¶´Ù ´Ù¸£¹Ç·Î ÆÄÀÏ¾÷·Îµå ÁöÁ¤À» PC¿¡¼­ ÇÁ·ÎÁ§Æ®¾ÈÀÇ resources/imagesÆú´õ°¡ À§Ä¡ÇÑ  °æ·Î(????/project_final/WebContent/resources/images)¸¦ º¯°æÇÑ´Ù.
-(processAddRamen.jsp ¿¡¼­ String realFolder =  "C://Users/JEC/eclipse-workspace/project_final/WebContent/resources/images"; ºÎºÐÀ» º¯°æ)
+2. ê²½ë¡œê°€ PCë§ˆë‹¤ ë‹¤ë¥´ë¯€ë¡œ íŒŒì¼ì—…ë¡œë“œ ì§€ì •ì„ PCì—ì„œ í”„ë¡œì íŠ¸ì•ˆì˜ resources/imagesí´ë”ê°€ ìœ„ì¹˜í•œ  ê²½ë¡œ(????/project_final/WebContent/resources/images)ë¥¼ ë³€ê²½í•œë‹¤.
+(processAddRamen.jsp ì—ì„œ String realFolder =  "C://Users/JEC/eclipse-workspace/project_final/WebContent/resources/images"; ë¶€ë¶„ì„ ë³€ê²½)
 
-3.ramenmall µ¥ÀÌÅÍº£ÀÌ½º¸¦ »ý¼ºÇÏ¿© MySql_5.1 /ramenmall.conn/ramenmall À¸·Î connection ÈÄ ramen, orderinfo Å×ÀÌºí »ý¼º(MySQL ¼³Á¤À» utf8·Î ¹Ù²ã¾ßµÈ´Ù.)
--> ÇÁ·ÎÁ§Æ® ³» sql Æú´õ ¾È ramenmall.sqlÀ» ¿¬°áÇÏ¿© ÀÛ¼ºµÈ Äõ¸®¹®À» Àû¿ë
+3.ramenmall ë°ì´í„°ë² ì´ìŠ¤ë¥¼ ìƒì„±í•˜ì—¬ MySql_5.1 /ramenmall.conn/ramenmall ìœ¼ë¡œ connection í›„ ramen, orderinfo í…Œì´ë¸” ìƒì„±(MySQL ì„¤ì •ì„ utf8ë¡œ ë°”ê¿”ì•¼ëœë‹¤.)
+-> í”„ë¡œì íŠ¸ ë‚´ sql í´ë” ì•ˆ ramenmall.sqlì„ ì—°ê²°í•˜ì—¬ ìž‘ì„±ëœ ì¿¼ë¦¬ë¬¸ì„ ì ìš©
 
 create table if not exists ramen(
 
@@ -29,24 +29,30 @@ s_addressName TEXT,
 PRIMARY KEY (s_cartId)
 );
 
-*±âº»À¸·Î µî·ÏµÈ ramen ·¹½ÃÇÇ insert
+*ê¸°ë³¸ìœ¼ë¡œ ë“±ë¡ëœ ramen ë ˆì‹œí”¼ insert
 
-insert into ramen values('R11','EggRamen',2550,'¸Å¿î ¶ó¸é','¹°À» 3ºÐ°£ ²úÀÌ°í ¸éºÎÅÍ ³Ö½À´Ï´Ù. ±×¸®°í ½ºÇÁ¸¦ ³Ö°í ¸Ç ¸¶Áö¸·¿¡ °è¶õÀ» Á£Áö ¾Ê°í Ç®¾îÁÝ´Ï´Ù.','Áø¶ó¸é','°è¶õ 1°³, ¹° 500ml',3,'R11.jpeg');
-insert into ramen values('R12','HackRamen',3500,'¸Å¿î ¶ó¸é','¹°À» 3ºÐ°£ ²úÀÌ°í ¸éºÎÅÍ ³Ö½À´Ï´Ù. ±×¸®°í Ã»¾ç°íÃß¸¦ ¸ÕÀú ³Ö°í ½ºÇÁ¸¦ ³Ö½À´Ï´Ù. ±×¸®°í °è¶õÀ» µû·Î Á¢½Ã¿¡ Ç®¾î¼­ ±×°ÍÀ» ¶ó¸é¿¡ ³Ö¾îÁÝ´Ï´Ù.','¿­¶ó¸é','°è¶õ 1°³, Ã»¾ç°íÃß 2°³, ¹° 550ml',4,'R12.jpg');
+insert into ramen values('R11','EggRamen',2550,'ë§¤ìš´ ë¼ë©´','ë¬¼ì„ 3ë¶„ê°„ ë“ì´ê³  ë©´ë¶€í„° ë„£ìŠµë‹ˆë‹¤. ê·¸ë¦¬ê³  ìŠ¤í”„ë¥¼ ë„£ê³  ë§¨ ë§ˆì§€ë§‰ì— ê³„ëž€ì„ ì “ì§€ ì•Šê³  í’€ì–´ì¤ë‹ˆë‹¤.','ì§„ë¼ë©´','ê³„ëž€ 1ê°œ, ë¬¼ 500ml',3,'R11.jpeg');
+insert into ramen values('R12','HackRamen',3500,'ë§¤ìš´ ë¼ë©´','ë¬¼ì„ 3ë¶„ê°„ ë“ì´ê³  ë©´ë¶€í„° ë„£ìŠµë‹ˆë‹¤. ê·¸ë¦¬ê³  ì²­ì–‘ê³ ì¶”ë¥¼ ë¨¼ì € ë„£ê³  ìŠ¤í”„ë¥¼ ë„£ìŠµë‹ˆë‹¤. ê·¸ë¦¬ê³  ê³„ëž€ì„ ë”°ë¡œ ì ‘ì‹œì— í’€ì–´ì„œ ê·¸ê²ƒì„ ë¼ë©´ì— ë„£ì–´ì¤ë‹ˆë‹¤.','ì—´ë¼ë©´','ê³„ëž€ 1ê°œ, ì²­ì–‘ê³ ì¶” 2ê°œ, ë¬¼ 550ml',4,'R12.jpg');
 
-insert into ramen values('R13','ShrimpRamen',8000,'¸Å¿î ¶ó¸é','»õ¿ì ´ëÇÏ¸¦ ½ÄÃÊ¹°¿¡ ³Ö½À´Ï´Ù. ¹°±â¸¦ Á¦°ÅÇÏ°í ³Ãµ¿½Ç¿¡ º¸°üÇÕ´Ï´Ù. ±× ÈÄ ¼ö¿°°ú ´Ù¸®¸¦ ¶â¾î³»°í ²®Áú°ú ³»ÀåÀ» »©ÁÝ´Ï´Ù. ¿÷ÀÌ ´Þ±ÅÁö¸é ¸Ó¸® ´Ù¸® ²®ÁúÀ» ³Ö°í ººÀ½´ÙÀ½ À¸±ú¾î »õ¿ì°¡·ç¸¦ ¸¸µì´Ï´Ù. ¿÷¿¡ ¾ßÃ¤¼ö ¹°À» ³Ö¾î ²úÀÌ°í ½ºÇÁ¸¦ ³Ö°í ¸éÀ» ³Ö¾î Ç®¾îÁö°Ô ²úÀÌ°í Äá³ª¹°, »õ¿ì, ÆØÀÌ¹ö¼¸, ¾à°íÃßÀå, »õ¿ì°¡·ç, ±¼¼Ò½º ´ëÆÄ, È«°íÃß, Ã»°íÃß¸¦ ¼ø¼­´ë·Î ³Ö½À´Ï´Ù.','Áø¶ó¸é','»õ¿ì, ¾ßÃ¤¼ö550ml, Äá³ª¹°, »õ¿ì, ÆØÀÌ¹ö¼¸, ¾à°íÃßÀå, »õ¿ì°¡·ç, ±¼¼Ò½º ´ëÆÄ, È«°íÃß, Ã»°íÃß',3,'R13.jpg');
-
-
-
-insert into ramen values('R21','ZZangRamen',2600,'ÀÚÀå ¶ó¸é','¹°À» 5ºÐ°£ ²úÀÔ´Ï´Ù.  ±×¸®°í ¸éÀ» ³Ö¾î ÀÍÈù´ÙÀ½ ¸éÀÌ ÃËÃËÇØÁú Á¤µµ·Î¸¸ ¹°À» »©ÁÝ´Ï´Ù. ±×¸®°í Â¥Àå ½ºÇÁ¿Í °íÃå°¡·ç¸¦ ³Ö°í ºñº­ÁÝ´Ï´Ù. ±×¸®°í ÈÄ¶óÀÌÆÒ¿¡ °è¶õÀ» µû·Î ºÎÃÄ¼­ ¶ó¸é°ú °°ÀÌ ¸Ô½À´Ï´Ù.','ÁøÂ¥Àå','°è¶õ 1°³, °íÃå°¡·ç, ¹° 500ml',2,'R21.jpeg');
-
-insert into ramen values('R22','HotBlackRamen',6600,'ÀÚÀå ¶ó¸é','º£ÀÌÄÁÀ» ÇÑÀÔ Å©±â·Î ÀÚ¸£°í ÆÒ¿¡ ºº¾ÆÁÝ´Ï´Ù. º£ÀÌÄÁÀÌ ÀÍÀ¸¸é ²¨³»ÁÖ°í, ±× ±â¸§¿¡ °è¶õÀ» ½á´Ï»çÀÌµå¾÷À¸·Î ÀÍÇôÁÝ´Ï´Ù. ¹°ÀÌ ²úÀ¸¸é ¸éÀ» ³Ö¾î ÀÍÈù¿ì Àû´ç·®ÀÇ ¹°À» ³²±â°í ¹°À» ¹ö·ÁÁÝ´Ï´Ù, º£ÀÌÄÁ, °íÃå°¡·ç 1T, ¶ó¸é¼Ò½º¿Í ¿Ã¸®ºê¿ÀÀÏÀ» ¸ðµÎ ³ÖÀº ÈÄ ¼Ò½º°¡ ¹¶Ä¡Áö ¾Êµµ·Ï ¹ö¹«·ÁÁÖ°í  ¸¶Áö¸·¿¡ Ä¡Áî¿Í °è¶õÀ» ¿Ã·ÁÁÝ´Ï´Ù.','Â¥ÆÄ°ÔÆ¼','°íÃå°¡·ç 1T, º£ÀÌÄÁ 1ÁÙ, °è¶õ 1°³, Ä¡Áî 2Àå, ¹° 500ml',4,'R22.jpg');
-insert into ramen values('R23','CheeseBlackRamen',4000,'ÀÚÀå ¶ó¸é','¹°ÀÌ …ÉÀ¸¸é ¸é°ú °Ç´õ±â½ºÇÁ¸¦ ³Ö½À´Ï´Ù. ¸éÀ» Ç« ÀÍÈ÷Áö ¸»°í ²¿µéÇÏ´Ï ´ú »î°ÜÁ³À» ¶§ ¹°À» µû¶ó ¹ö¸³´Ï´Ù. ±×¸®°í ´ëÆÄ¸¦ ½ä¾î ³Ö¾î ¸¶Àú ²úÀÔ´Ï´Ù. ±× ´ÙÀ½ ºÐ¸» ½ºÇÁ¸¦ ³Ö°í ¼¯À» ¶§¿¡µµ ¿­±â ±×´ë·Î À¯ÁöµÇµµ·Ï °¡½ººÒÀº ²ôÁö ¾Ê½À´Ï´Ù. ±×¸®°í Ä¡Áî¸¦ ¿Ã¸³´Ï´Ù.','Â¥ÆÄ°ÔÆ¼','´ëÆÄ 1/2´ë, ½½¶óÀÌ½º Ã¼´ÙÄ¡Áî 1Àå',1,'R23.jpg');
-insert into ramen values('R31','MayoRamen',5600,'±×¿Ü ¶ó¸é','²ú´Â ¹°¿¡ ¶ó¸é°ú ´Ù½Ã¸¶ 1Á¶°¢À» ³Ö¾î »î¾ÆÁÝ´Ï´Ù. »îÀº ¸éÀ» µû·Î º¼¿¡ ´ã¾ÆÁÖ¼¼¿ä. ÆÒ¿¡ ±â¸§À» µÎ¸£°í ¾àºÒ¿¡ ´ëÆÄ¿Í ¸¶´ÃÀ» ºº¾ÆÁÝ´Ï´Ù. ¸¶´ÃÀÌ ±¸¿öÁö¸é, ½ä¾î ³õÀº ¾ç¹èÃß¿Í ¼÷ÁÖ¸¦ ³Ö¾î ¼¾ºÒ¿¡¼­ ºü¸£°Ô ºº¾ÆÁÖ¼¼¿ä. »î¾Æ ³õÀº ¶ó¸éÀ» ³Ö°í ¶ó¸é ½ºÇÁ¿Í ±¼¼Ò½º¸¦ ³Ö¾îÁÖ¼¼¿ä. ¼Ò½º¿Í ¸éÀ» °í·ç ¼¯¾î ÁßºÒ¿¡¼­ ºº¾ÆÁÖ¼¼¿ä. ÆÒ¿¡ ±â¸§À» µÎ¸£°í ¾àºÒ¿¡¼­ ´ëÆÄ¿Í ¸¶´ÃÀ» ºº¾ÆÁÖ°í ½ä¾î ³õÀº ¾ç¹èÃß¿Í ¼÷ÁÖ¸¦ ³Ö¾î ¼¾ºÒ¿¡¼­ ºü¸£°Ô ººÀº ÈÄ ¶ó¸éÀ» ³Ö°í ¶ó¸é ½ºÇÁ¿Í ±¼¼Ò½º¸¦ ºÎ¾î ÁßºÒ¿¡¼­ ÇÔ²² ºº¾ÆÁÝ´Ï´Ù. ººÀº ¶ó¸éÀ» ±×¸©¿¡ ´ã°í, ¸¶¿ä³×Áî¸¦ »Ñ¸° ÈÄ ½ä¾î ³õÀº Ã»¾ç°íÃß¿Í È«°íÃß¸¦ ¿Ã¸®°í ·¹µåÆäÆÛ¸¦ »Ñ¸° ÈÄ ¸¶¹«¸®ÇÕ´Ï´Ù.','¶ó¸é»ç¸®','´Ù½Ã¸¶ 1Á¶°¢, ¾ç¹èÃß 1/8°³, ¼÷ÁÖ 100g, ´ëÆÄ1/2´ë, ¸¶´Ã 2ÂÊ, Ã»¾ç°íÃß 1°³, È«°íÃß 1°³, ±¼¼Ò½º 2Å«¼ú, ¸¶¿ä³×Áî 3Å«¼ú, ·¹µåÆäÆÛ',2,'R31.jpg');
+insert into ramen values('R13','ShrimpRamen',8000,'ë§¤ìš´ ë¼ë©´','ìƒˆìš° ëŒ€í•˜ë¥¼ ì‹ì´ˆë¬¼ì— ë„£ìŠµë‹ˆë‹¤. ë¬¼ê¸°ë¥¼ ì œê±°í•˜ê³  ëƒ‰ë™ì‹¤ì— ë³´ê´€í•©ë‹ˆë‹¤. ê·¸ í›„ ìˆ˜ì—¼ê³¼ ë‹¤ë¦¬ë¥¼ ëœ¯ì–´ë‚´ê³  ê»ì§ˆê³¼ ë‚´ìž¥ì„ ë¹¼ì¤ë‹ˆë‹¤. ì›ì´ ë‹¬ê¶ˆì§€ë©´ ë¨¸ë¦¬ ë‹¤ë¦¬ ê»ì§ˆì„ ë„£ê³  ë³¶ìŒë‹¤ìŒ ìœ¼ê¹¨ì–´ ìƒˆìš°ê°€ë£¨ë¥¼ ë§Œë“­ë‹ˆë‹¤. ì›ì— ì•¼ì±„ìˆ˜ ë¬¼ì„ ë„£ì–´ ë“ì´ê³  ìŠ¤í”„ë¥¼ ë„£ê³  ë©´ì„ ë„£ì–´ í’€ì–´ì§€ê²Œ ë“ì´ê³  ì½©ë‚˜ë¬¼, ìƒˆìš°, íŒ½ì´ë²„ì„¯, ì•½ê³ ì¶”ìž¥, ìƒˆìš°ê°€ë£¨, êµ´ì†ŒìŠ¤ ëŒ€íŒŒ, í™ê³ ì¶”, ì²­ê³ ì¶”ë¥¼ ìˆœì„œëŒ€ë¡œ ë„£ìŠµë‹ˆë‹¤.','ì§„ë¼ë©´','ìƒˆìš°, ì•¼ì±„ìˆ˜550ml, ì½©ë‚˜ë¬¼, ìƒˆìš°, íŒ½ì´ë²„ì„¯, ì•½ê³ ì¶”ìž¥, ìƒˆìš°ê°€ë£¨, êµ´ì†ŒìŠ¤ ëŒ€íŒŒ, í™ê³ ì¶”, ì²­ê³ ì¶”',3,'R13.jpg');
 
 
-4.ÅèÄÏ ¼­¹öÀÇ tomcat-users.xml ¿¡¼­  
+
+insert into ramen values('R21','ZZangRamen',2600,'ìžìž¥ ë¼ë©´','ë¬¼ì„ 5ë¶„ê°„ ë“ìž…ë‹ˆë‹¤.  ê·¸ë¦¬ê³  ë©´ì„ ë„£ì–´ ìµížŒë‹¤ìŒ ë©´ì´ ì´‰ì´‰í•´ì§ˆ ì •ë„ë¡œë§Œ ë¬¼ì„ ë¹¼ì¤ë‹ˆë‹¤. ê·¸ë¦¬ê³  ì§œìž¥ ìŠ¤í”„ì™€ ê³ ì¶§ê°€ë£¨ë¥¼ ë„£ê³  ë¹„ë²¼ì¤ë‹ˆë‹¤. ê·¸ë¦¬ê³  í›„ë¼ì´íŒ¬ì— ê³„ëž€ì„ ë”°ë¡œ ë¶€ì³ì„œ ë¼ë©´ê³¼ ê°™ì´ ë¨¹ìŠµë‹ˆë‹¤.','ì§„ì§œìž¥','ê³„ëž€ 1ê°œ, ê³ ì¶§ê°€ë£¨, ë¬¼ 500ml',2,'R21.jpeg');
+
+insert into ramen values('R22','HotBlackRamen',6600,'ìžìž¥ ë¼ë©´','ë² ì´ì»¨ì„ í•œìž… í¬ê¸°ë¡œ ìžë¥´ê³  íŒ¬ì— ë³¶ì•„ì¤ë‹ˆë‹¤. ë² ì´ì»¨ì´ ìµìœ¼ë©´ êº¼ë‚´ì£¼ê³ , ê·¸ ê¸°ë¦„ì— ê³„ëž€ì„ ì¨ë‹ˆì‚¬ì´ë“œì—…ìœ¼ë¡œ ìµí˜€ì¤ë‹ˆë‹¤. ë¬¼ì´ ë“ìœ¼ë©´ ë©´ì„ ë„£ì–´ ìµížŒìš° ì ë‹¹ëŸ‰ì˜ ë¬¼ì„ ë‚¨ê¸°ê³  ë¬¼ì„ ë²„ë ¤ì¤ë‹ˆë‹¤, ë² ì´ì»¨, ê³ ì¶§ê°€ë£¨ 1T, ë¼ë©´ì†ŒìŠ¤ì™€ ì˜¬ë¦¬ë¸Œì˜¤ì¼ì„ ëª¨ë‘ ë„£ì€ í›„ ì†ŒìŠ¤ê°€ ë­‰ì¹˜ì§€ ì•Šë„ë¡ ë²„ë¬´ë ¤ì£¼ê³   ë§ˆì§€ë§‰ì— ì¹˜ì¦ˆì™€ ê³„ëž€ì„ ì˜¬ë ¤ì¤ë‹ˆë‹¤.','ì§œíŒŒê²Œí‹°','ê³ ì¶§ê°€ë£¨ 1T, ë² ì´ì»¨ 1ì¤„, ê³„ëž€ 1ê°œ, ì¹˜ì¦ˆ 2ìž¥, ë¬¼ 500ml',4,'R22.jpg');
+insert into ramen values('R23','CheeseBlackRamen',4000,'ìžìž¥ ë¼ë©´','ë¬¼ì´ Â…î€Ÿë§Œ ë©´ê³¼ ê±´ë”ê¸°ìŠ¤í”„ë¥¼ ë„£ìŠµë‹ˆë‹¤. ë©´ì„ í‘¹ ìµížˆì§€ ë§ê³  ê¼¬ë“¤í•˜ë‹ˆ ëœ ì‚¶ê²¨ì¡Œì„ ë•Œ ë¬¼ì„ ë”°ë¼ ë²„ë¦½ë‹ˆë‹¤. ê·¸ë¦¬ê³  ëŒ€íŒŒë¥¼ ì°ì–´ ë„£ì–´ ë§ˆì € ë“ìž…ë‹ˆë‹¤. ê·¸ ë‹¤ìŒ ë¶„ë§ ìŠ¤í”„ë¥¼ ë„£ê³  ì„žì„ ë•Œì—ë„ ì—´ê¸° ê·¸ëŒ€ë¡œ ìœ ì§€ë˜ë„ë¡ ê°€ìŠ¤ë¶ˆì€ ë„ì§€ ì•ŠìŠµë‹ˆë‹¤. ê·¸ë¦¬ê³  ì¹˜ì¦ˆë¥¼ ì˜¬ë¦½ë‹ˆë‹¤.','ì§œíŒŒê²Œí‹°','ëŒ€íŒŒ 1/2ëŒ€, ìŠ¬ë¼ì´ìŠ¤ ì²´ë‹¤ì¹˜ì¦ˆ 1ìž¥',1,'R23.jpg');
+insert into ramen values('R31','MayoRamen',5600,'ê·¸ì™¸ ë¼ë©´','ë“ëŠ” ë¬¼ì— ë¼ë©´ê³¼ ë‹¤ì‹œë§ˆ 1ì¡°ê°ì„ ë„£ì–´ ì‚¶ì•„ì¤ë‹ˆë‹¤. ì‚¶ì€ ë©´ì„ ë”°ë¡œ ë³¼ì— ë‹´ì•„ì£¼ì„¸ìš”. íŒ¬ì— ê¸°ë¦„ì„ ë‘ë¥´ê³  ì•½ë¶ˆì— ëŒ€íŒŒì™€ ë§ˆëŠ˜ì„ ë³¶ì•„ì¤ë‹ˆë‹¤. ë§ˆëŠ˜ì´ êµ¬ì›Œì§€ë©´, ì°ì–´ ë†“ì€ ì–‘ë°°ì¶”ì™€ ìˆ™ì£¼ë¥¼ ë„£ì–´ ì„¼ë¶ˆì—ì„œ ë¹ ë¥´ê²Œ ë³¶ì•„ì£¼ì„¸ìš”. ì‚¶ì•„ ë†“ì€ ë¼ë©´ì„ ë„£ê³  ë¼ë©´ ìŠ¤í”„ì™€ êµ´ì†ŒìŠ¤ë¥¼ ë„£ì–´ì£¼ì„¸ìš”. ì†ŒìŠ¤ì™€ ë©´ì„ ê³ ë£¨ ì„žì–´ ì¤‘ë¶ˆì—ì„œ ë³¶ì•„ì£¼ì„¸ìš”. íŒ¬ì— ê¸°ë¦„ì„ ë‘ë¥´ê³  ì•½ë¶ˆì—ì„œ ëŒ€íŒŒì™€ ë§ˆëŠ˜ì„ ë³¶ì•„ì£¼ê³  ì°ì–´ ë†“ì€ ì–‘ë°°ì¶”ì™€ ìˆ™ì£¼ë¥¼ ë„£ì–´ ì„¼ë¶ˆì—ì„œ ë¹ ë¥´ê²Œ ë³¶ì€ í›„ ë¼ë©´ì„ ë„£ê³  ë¼ë©´ ìŠ¤í”„ì™€ êµ´ì†ŒìŠ¤ë¥¼ ë¶€ì–´ ì¤‘ë¶ˆì—ì„œ í•¨ê»˜ ë³¶ì•„ì¤ë‹ˆë‹¤. ë³¶ì€ ë¼ë©´ì„ ê·¸ë¦‡ì— ë‹´ê³ , ë§ˆìš”ë„¤ì¦ˆë¥¼ ë¿Œë¦° í›„ ì°ì–´ ë†“ì€ ì²­ì–‘ê³ ì¶”ì™€ í™ê³ ì¶”ë¥¼ ì˜¬ë¦¬ê³  ë ˆë“œíŽ˜í¼ë¥¼ ë¿Œë¦° í›„ ë§ˆë¬´ë¦¬í•©ë‹ˆë‹¤.','ë¼ë©´ì‚¬ë¦¬','ë‹¤ì‹œë§ˆ 1ì¡°ê°, ì–‘ë°°ì¶” 1/8ê°œ, ìˆ™ì£¼ 100g, ëŒ€íŒŒ1/2ëŒ€, ë§ˆëŠ˜ 2ìª½, ì²­ì–‘ê³ ì¶” 1ê°œ, í™ê³ ì¶” 1ê°œ, êµ´ì†ŒìŠ¤ 2í°ìˆ , ë§ˆìš”ë„¤ì¦ˆ 3í°ìˆ , ë ˆë“œíŽ˜í¼',2,'R31.jpg');
+
+
+4.í†°ì¼“ ì„œë²„ì˜ tomcat-users.xml ì—ì„œ  
 <role rolename="admin"/>
-<user username="admin" password="admin1234" roles="admin"/> Ãß°¡
+<user username="admin" password="admin1234" roles="admin"/> ì¶”ê°€
 
-5. ÇÁ·ÎÁ§Æ® Æú´õ¾È¿¡ ÀÌ¹ÌÁö ÆÄÀÏÀ» ¾÷·Îµå ÇÏ¹Ç·Î ¹Ù·Î »õ·Î°íÄ§ÀÌ µÇ±â À§ÇØ Window - Preferences - General - Workspace - Refresh using native hooks or polling Ã¼Å©
+5. í”„ë¡œì íŠ¸ í´ë”ì•ˆì— ì´ë¯¸ì§€ íŒŒì¼ì„ ì—…ë¡œë“œ í•˜ë¯€ë¡œ ë°”ë¡œ ìƒˆë¡œê³ ì¹¨ì´ ë˜ê¸° ìœ„í•´ Window - Preferences - General - Workspace - Refresh using native hooks or polling ì²´í¬
+
+
+
+
+
+
